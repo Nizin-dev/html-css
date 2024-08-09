@@ -1,0 +1,19 @@
+.headerdiv{
+    height: 200px;
+    border: 1px solid black;
+    background-image: url(imagens/wallpaper003.jpg);
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: 'Sriracha';
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+}
+body{
+    background-image: url('nbkbka/imagens/background001.jpg');
+    background-attachment: scroll;
+}
