@@ -5,22 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fundo fixo de tela</title>
     <style>
-        body{
+
+           /*body{
             height: 100vh;
             background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
             background-position: center top;
             background-repeat: no-repeat;
             background-size: cover; /*contain e usado para sempre mostrar a imagen inteira sem cortar deixando barras pretas, cover e usado para caber a imagem mesmo que tenha que cortar parte dela*/
+            /*background-attachment:fixed ;*/ /*imagem fica fixa quando descer, scroll a imagens desce junto*/
+
+          
+        body{
+            height: 100vh;
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;/*o size é bugado pois no papel(w3c) era para funcionar em shorthand, porem nao funciona por isso precisa por embaixo*/
+            background-size:cover;
         }
         main{
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
             border-radius: 15px;
         }
+
+        /*shorthand - background
+           color> image> position> repeat> size> attachment
     </style>
 </head>
 <body>
