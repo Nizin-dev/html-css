@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de responsividade</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+        main{
+            /*para deixar o texto responsivo*/
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            min-width: 280px;
+            max-width: 800px;
+            margin: auto;
+        }
+        img{/*para deixar imagem responsiva*/
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+    <h1>Testando responsividade</h1>
+    <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum ducimus ipsum officiis, eos mollitia dicta facere, natus iste, repellat quasi quisquam deserunt! Labore fugit minima libero et assumenda quae earum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore quas ex tempore et voluptatum voluptatem praesentium? Nostrum deleniti praesentium doloremque alias placeat tempora, quae ratione odio doloribus nesciunt illo eius! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem ullam autem veritatis neque incidunt eius maxime ratione reprehenderit, quasi quam ducimus blanditiis, laudantium qui magnam facere sed, veniam ipsam non.</P>
+    <picture>
+        <source media="(max-width:600px )" srcset="../../../desafio-enorme/imagens/irina-blok-pq.jpg"><!--Ate 600px a imagem vai ser irina-blok-pq-->
+        <img src="../../../desafio-enorme/imagens/irina-blok.jpg" alt="Irina blok">
+    </picture>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, aliquid. Voluptas, distinctio nemo ut hic quos molestias illum eaque ullam quod ipsam beatae dolore odio eum aspernatur facilis unde? Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, similique dolorum! Non architecto alias cumque adipisci quisquam ducimus deleniti assumenda at consequuntur possimus harum magnam laudantium officiis, deserunt vitae fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati perferendis quaerat dolores harum ullam illo perspiciatis tenetur, reprehenderit voluptatem debitis at nostrum facere animi libero. Harum officia error reprehenderit deleniti?</p>
+    </main>
+</body>
+</html>

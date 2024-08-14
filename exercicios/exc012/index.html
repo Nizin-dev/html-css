@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo videos hospedados localmente</h1>
+    <p>Este video esta hospedado no meu propio servidor</p>
+
+    <video width="500" loop poster="imagens/apple-touch-icon.png" controls>
+     <source src="midia/Meuvideo.webm" type="video/webm">
+     <source src="midia/Meuvideo1.mp4" type="video/mp4">
+     <p>Seu navegador nao tem compatibilidade com reproducao de videos</p><!--So aparece se nenhum dos dois abrir-->
+    </video>  
+    
+    <h1>Inserindo videos do youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg?si=jN7hSmgdtrf3zgM3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <!--Para achar esse codigo e so clicar em algum video do youtube em compartilhar, e depois em incorporar-->
+    <h1>Inserindo videos com vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/29844795?h=f0a1764666&loop=1" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/29844795">Animation Reel</a> from <a href="https://vimeo.com/user4645326">Raul Mari&ntilde;ez</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+<!--O processo no vimeo e igual-->
+</body>
+</html>
