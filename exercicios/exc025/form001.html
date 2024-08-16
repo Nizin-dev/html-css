@@ -14,7 +14,17 @@
 <!--ESTILO BASICO DE FORMULARIOS,sempre usar label-->
 <body>
     <h1>Meu primeiro formulario</h1>
-    <form action="cadastro.php" autocomplete="off"><!--para tirar o sistema de completar automatico, php nao entendo ainda,  so exemplo-->
+    <form action="cadastro.php" method="post" autocomplete="off">
+
+    <!--methods, o metodo get deixa os dados enviados pelo formulario na url, o metodo post tira os dados da url, porem eles aparecem de qualquer forma no devtools-->
+
+    <!--Quando usar metodo get
+    quando voce nao tiver pedindo dados intrusivos, como o nome, sobrenome e quando for abaixo de 3000 letras -->
+    <!--Quando usar metodo post
+    quando tiver enviando dados,senhas,enderecos
+    -->
+    
+    <!--para tirar o sistema de completar automatico, php nao entendo ainda,  so exemplo-->
         <p><label for="inome">Nome: </label><!--Usar id para  label-->
             <input type="text" name="nome" id="inome"></p>
         <p><label for="isobrenome">Sobrenome: </label> 
