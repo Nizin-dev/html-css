@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media query</title>
+    <style>
+        /*Declaracoes gerais*/
+*{
+        margin: 0px;
+        padding: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+}
+html,  body{
+        width: 100vw;
+        height: 100vh;
+        background-color: #233EFF;
+        background-size: contain;/*para mostrar a imagem toda*/
+        background-repeat: no-repeat;
+}
+h1{
+        color: white;
+        text-shadow: 2px  2px 0px rgb(10, 10, 116);
+        padding: 10px;
+}
+        /*declareacoes retrato*/
+        @media screen and (orientation: portrait) {/*em pé*/
+            
+        }
+body{
+        background-image: url(../imagens/cev-portrait.jpg);
+        background-position: center  bottom;
+    
+}
+        /*declaracoes paisagem*/
+        @media screen and (orientation: landscape){/*deitado*/
+            
+        }
+body{
+        background-image: url(../imagens/cev-landscape.jpg);
+        background-position: left bottom; /*para ficar colado no canto inferior esquerdo*/
+}
+    </style>
+</head>
+<body>
+    <h1>Mude a orientação do seu celular</h1>
+    <p>Sei la isso aqui fica tudo bugado</p>
+</body>
+</html>
