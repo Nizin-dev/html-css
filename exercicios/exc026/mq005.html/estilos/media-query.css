@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/*Todas as demais midias*/
+/* Typical Device Breakpoints:
+----------------------------------
+Telas Pequenas: de 320px até 480px
+Celular: de 481px até 768px
+Tablet: de 769px até 1024px
+Desktop: 1025px até 1200px
+Telas Grandes: acima de 1201px
+*/
+@media screen and (min-width: 768px){
+    i#burguer{
+        display: none;
+    } /*codigos para tirar o menu burguer quando for um tablet pra cima*/
+    menu{
+        display: block;/*pro menu aparecer, pq no celular o display dele ta em none*/
+    }
+
+    menu>ul>li{
+        display: inline-block;/*para em telas grandes deixar um do lado do outro*/
+    }
+}

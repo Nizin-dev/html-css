@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media querry</title>
-    link
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu site</h1>
-        <menu>
+        <span id="burguer" class="material-icons" onclick="clickMenu()">
+            menu
+        </span>
+        <menu id="itens">
             <ul>
                 <li><a href="#">Opcao 1</a></li>
                 <li><a href="#">Opcao 2</a></li>
@@ -31,5 +35,27 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque voluptatum, et nesciunt labore officiis architecto, id quo, quod error rem nulla quos laudantium! Perspiciatis in sed saepe, corrupti nemo libero! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos repellat rem, labore, sit enim voluptate minima consequatur tempore delectus aliquam nisi quas perspiciatis minus ex voluptatum eum voluptatem. Ratione, hic.</p>
         </article>
     </main>
+    <script>
+
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+        function clickMenu() {
+        if  (itens.style.display == 'block') {
+            itens.style.display= 'none'
+            } else{
+                itens.style.display = 'block'
+            }
+        }
+        
+    </script>
+    <!--Script do menu-->
+    <!--O if signfica um "se" por exemplo, se a largura da tela for maior ou igual a 768px o display vai ser block, o else funciona como um "se nao" ou seja, se nao for maior ou igual o display vai ser none-->
+    <!--Codigo nao funcioando  por  algum motivo-->
 </body>
 </html>
